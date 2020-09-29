@@ -11,15 +11,15 @@ import (
 // "k8s.io/apimachinery/pkg/util/yaml"
 
 var row = map[string]string{
-	// "id":                 "2",
-	// "contact.name.first": "John",
-	// "contact.name.last":  "Doe",
-	// "contact.email":      "example@gmail.com",
-	// "contact.info.me":    "classified",
-	// "devices[0].sss":     "mobile",
-	// "devices[1].aaa":     "laptop",
-	"aaa.vvvv[0]": "oooo",
-	"aaa.vvvv[1]": "pppp",
+	"id":                 "2",
+	"contact.name.first": "John",
+	"contact.name.last":  "Doe",
+	"contact.email":      "example@gmail.com",
+	"contact.info.me":    "classified",
+	"devices[0].sss":     "mobile",
+	"devices[1].aaa":     "laptop",
+	// "aaa.vvvv[0]": "oooo",
+	// "aaa.vvvv[1]": "pppp",
 }
 
 var test = map[string]interface{}{
