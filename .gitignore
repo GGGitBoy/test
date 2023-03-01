@@ -1,0 +1,7 @@
+/.vscode
+/dist
+/channels-rfo.yaml
+/.dapper
+/Dockerfile.dapper*
+!/Dockerfile.dapper
+/bin/
