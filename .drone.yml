@@ -9,6 +9,11 @@ platform:
 node:
   instance: agent-amd64
 
+trigger:
+  event:
+    - push
+    - pull-request
+
 steps:
   - name: "merge-kdm"
     image: cnrancher/gc-kdm-generator:v0.1.1
@@ -94,4 +99,4 @@ steps:
       dockerfile: package/Dockerfile
     volumes:
       - name: docker
-        path: /var/run/docker
+        path: /var/run/docker.sock
