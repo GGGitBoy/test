@@ -32,7 +32,7 @@ steps:
         - push
 ---
 kind: pipeline
-name: kdm-ci
+name: kdm-ci-release
 type: docker
 
 platform:
