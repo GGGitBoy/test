@@ -31,7 +31,7 @@ steps:
       ACCESS_KEY_SECRET:
         from_secret: "aliyun_access_secret"
     commands:
-      - /entrypoint.sh ossutil cp ./data/data.json oss://pandaria-releases/kontainer-driver-metadata/${DRONE_BRANCH}/data.json
+      - /entrypoint.sh ossutil cp --force ./data/data.json oss://pandaria-releases/kontainer-driver-metadata/${DRONE_BRANCH}/data.json
     when:
       event:
         - push
@@ -73,7 +73,7 @@ steps:
       ACCESS_KEY_SECRET:
         from_secret: "aliyun_access_secret"
     commands:
-      - /entrypoint.sh ossutil cp ./data/data.json oss://pandaria-releases/kontainer-driver-metadata/tags/${DRONE_TAG}/data.json
+      - /entrypoint.sh ossutil cp --force ./data/data.json oss://pandaria-releases/kontainer-driver-metadata/tags/${DRONE_TAG}/data.json
   - name: install-buildx-support
     image: tonistiigi/binfmt
     privileged: true
