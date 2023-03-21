@@ -30,3 +30,68 @@ steps:
     when:
       event:
         - push
+---
+kind: pipeline
+name: kdm-ci
+type: docker
+
+platform:
+  os: linux
+  arch: amd64
+
+node:
+  instance: agent-amd64
+
+trigger:
+  event:
+    - tag
+
+volumes:
+  - name: docker
+    host:
+      path: /var/run/docker.sock
+
+steps:
+  - name: "merge-kdm"
+    image: cnrancher/gc-kdm-generator:v0.1.1
+  - name: "check-updates"
+    image: "alpine/git:2.36.3"
+    commands:
+      - if [ -n "$(git status --porcelain --untracked-files=no)" ]; then echo "Git is dirty"; git status; exit 1; fi
+  - name: "publish"
+    image: "orstar/ossutil:v1.7.13-confd"
+    environment:
+      ENDPOINT:
+        from_secret: "endpoint"
+      ACCESS_KEY_ID:
+        from_secret: "aliyun_access_id"
+      ACCESS_KEY_SECRET:
+        from_secret: "aliyun_access_secret"
+    commands:
+      - /entrypoint.sh ossutil cp ./data/data.json oss://pandaria-releases/kontainer-driver-metadata/tags/${DRONE_TAG}/data.json
+  - name: install-buildx-support
+    image: tonistiigi/binfmt
+    privileged: true
+    entrypoint:
+      - /usr/bin/binfmt
+    command:
+      - --install
+      - all
+  - name: publish-image
+    image: thegeeklab/drone-docker-buildx:20
+    privileged: true
+    settings:
+      platforms:
+        - linux/amd64
+        - linux/arm64
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+      tags:
+        - ${DRONE_TAG}
+      repo: cnrancher/kdm
+      dockerfile: package/Dockerfile
+    volumes:
+      - name: docker
+        path: /var/run/docker
