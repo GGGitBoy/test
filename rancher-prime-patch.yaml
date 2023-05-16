@@ -1,4 +1,11 @@
 releases:
+  - version: v1.25.9-rancherent2-1-1
+    referenceVersion: v1.25.9-rancher2-1
+    systemImages:
+      alpine: cnrancher/cn-rke-tools:v0.1.88-ent
+      nginxProxy: cnrancher/cn-rke-tools:v0.1.88-ent
+      certDownloader: cnrancher/cn-rke-tools:v0.1.88-ent
+      kubernetesServicesSidecar: cnrancher/cn-rke-tools:v0.1.88-ent
   - version: v1.25.6-rancherent4-1-1
     referenceVersion: v1.25.6-rancher4-1
     systemImages:
@@ -6,6 +13,12 @@ releases:
       nginxProxy: cnrancher/cn-rke-tools:v0.1.87-ent
       certDownloader: cnrancher/cn-rke-tools:v0.1.87-ent
       kubernetesServicesSidecar: cnrancher/cn-rke-tools:v0.1.87-ent
+  - version: v1.24.13-rancherent2-1-1
+    referenceVersion: v1.24.13-rancher2-1
+    systemImages:
+      alpine: cnrancher/cn-rke-tools:v0.1.88-ent
+      nginxProxy: cnrancher/cn-rke-tools:v0.1.88-ent
+      certDownloader: cnrancher/cn-rke-tools:v0.1.88-ent
   - version: v1.24.10-rancherent4-1-1
     referenceVersion: v1.24.10-rancher4-1
     systemImages:
@@ -20,8 +33,8 @@ releases:
       nginxProxy: cnrancher/cn-rke-tools:v0.1.88-ent
       certDownloader: cnrancher/cn-rke-tools:v0.1.88-ent
       kubernetesServicesSidecar: cnrancher/cn-rke-tools:v0.1.88-ent
-  - version: v1.23.15-rancherent1-1-1
-    referenceVersion: v1.23.15-rancher1-1
+  - version: v1.23.16-rancherent2-2-1
+    referenceVersion: v1.23.16-rancher2-2
     systemImages:
       alpine: cnrancher/cn-rke-tools:v0.1.88-ent
       nginxProxy: cnrancher/cn-rke-tools:v0.1.88-ent
@@ -29,6 +42,13 @@ releases:
       kubernetesServicesSidecar: cnrancher/cn-rke-tools:v0.1.88-ent
   - version: v1.23.16-rancherent2-1-1
     referenceVersion: v1.23.16-rancher2-1
+    systemImages:
+      alpine: cnrancher/cn-rke-tools:v0.1.88-ent
+      nginxProxy: cnrancher/cn-rke-tools:v0.1.88-ent
+      certDownloader: cnrancher/cn-rke-tools:v0.1.88-ent
+      kubernetesServicesSidecar: cnrancher/cn-rke-tools:v0.1.88-ent
+  - version: v1.23.15-rancherent1-1-1
+    referenceVersion: v1.23.15-rancher1-1
     systemImages:
       alpine: cnrancher/cn-rke-tools:v0.1.88-ent
       nginxProxy: cnrancher/cn-rke-tools:v0.1.88-ent
