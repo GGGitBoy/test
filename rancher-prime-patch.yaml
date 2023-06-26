@@ -1,4 +1,18 @@
 releases:
+  - version: v1.26.4-rancherent2-1-1
+    referenceVersion: v1.26.4-rancher2-1
+    systemImages:
+      alpine: cnrancher/cn-rke-tools:v0.1.89-ent
+      nginxProxy: cnrancher/cn-rke-tools:v0.1.89-ent
+      certDownloader: cnrancher/cn-rke-tools:v0.1.89-ent
+      kubernetesServicesSidecar: cnrancher/cn-rke-tools:v0.1.89-ent
+  - version: v1.25.9-rancherent2-2-1
+    referenceVersion: v1.25.9-rancher2-2
+    systemImages:
+      alpine: cnrancher/cn-rke-tools:v0.1.88-ent
+      nginxProxy: cnrancher/cn-rke-tools:v0.1.88-ent
+      certDownloader: cnrancher/cn-rke-tools:v0.1.88-ent
+      kubernetesServicesSidecar: cnrancher/cn-rke-tools:v0.1.88-ent
   - version: v1.25.9-rancherent2-1-1
     referenceVersion: v1.25.9-rancher2-1
     systemImages:
@@ -13,6 +27,13 @@ releases:
       nginxProxy: cnrancher/cn-rke-tools:v0.1.87-ent
       certDownloader: cnrancher/cn-rke-tools:v0.1.87-ent
       kubernetesServicesSidecar: cnrancher/cn-rke-tools:v0.1.87-ent
+  - version: v1.24.13-rancherent2-2-1
+    referenceVersion: v1.24.13-rancher2-2
+    systemImages:
+      alpine: cnrancher/cn-rke-tools:v0.1.88-ent
+      nginxProxy: cnrancher/cn-rke-tools:v0.1.88-ent
+      certDownloader: cnrancher/cn-rke-tools:v0.1.88-ent
+      kubernetesServicesSidecar: cnrancher/cn-rke-tools:v0.1.88-ent
   - version: v1.24.13-rancherent2-1-1
     referenceVersion: v1.24.13-rancher2-1
     systemImages:
@@ -28,6 +49,13 @@ releases:
       kubernetesServicesSidecar: cnrancher/cn-rke-tools:v0.1.88-ent
   - version: v1.24.9-rancherent1-1-1
     referenceVersion: v1.24.9-rancher1-1
+    systemImages:
+      alpine: cnrancher/cn-rke-tools:v0.1.88-ent
+      nginxProxy: cnrancher/cn-rke-tools:v0.1.88-ent
+      certDownloader: cnrancher/cn-rke-tools:v0.1.88-ent
+      kubernetesServicesSidecar: cnrancher/cn-rke-tools:v0.1.88-ent
+  - version: v1.23.16-rancherent2-3-1
+    referenceVersion: v1.23.16-rancher2-3
     systemImages:
       alpine: cnrancher/cn-rke-tools:v0.1.88-ent
       nginxProxy: cnrancher/cn-rke-tools:v0.1.88-ent
