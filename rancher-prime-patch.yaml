@@ -1,4 +1,11 @@
 releases:
+  - version: v1.26.7-rancherent1-1-1
+    referenceVersion: v1.26.7-rancher1-1
+    systemImages:
+      alpine: cnrancher/cn-rke-tools:v0.1.89-ent
+      nginxProxy: cnrancher/cn-rke-tools:v0.1.89-ent
+      certDownloader: cnrancher/cn-rke-tools:v0.1.89-ent
+      kubernetesServicesSidecar: cnrancher/cn-rke-tools:v0.1.89-ent
   - version: v1.26.6-rancherent1-1-1
     referenceVersion: v1.26.6-rancher1-1
     systemImages:
@@ -13,6 +20,13 @@ releases:
       nginxProxy: cnrancher/cn-rke-tools:v0.1.89-ent
       certDownloader: cnrancher/cn-rke-tools:v0.1.89-ent
       kubernetesServicesSidecar: cnrancher/cn-rke-tools:v0.1.89-ent
+  - version: v1.25.12-rancherent1-1-1
+    referenceVersion: v1.25.12-rancher1-1
+    systemImages:
+      alpine: cnrancher/cn-rke-tools:v0.1.88-ent
+      nginxProxy: cnrancher/cn-rke-tools:v0.1.88-ent
+      certDownloader: cnrancher/cn-rke-tools:v0.1.88-ent
+      kubernetesServicesSidecar: cnrancher/cn-rke-tools:v0.1.88-ent
   - version: v1.25.11-rancherent1-1-1
     referenceVersion: v1.25.11-rancher1-1
     systemImages:
@@ -41,6 +55,13 @@ releases:
       nginxProxy: cnrancher/cn-rke-tools:v0.1.87-ent
       certDownloader: cnrancher/cn-rke-tools:v0.1.87-ent
       kubernetesServicesSidecar: cnrancher/cn-rke-tools:v0.1.87-ent
+  - version: v1.24.16-rancherent1-1-1
+    referenceVersion: v1.24.16-rancher1-1
+    systemImages:
+      alpine: cnrancher/cn-rke-tools:v0.1.88-ent
+      nginxProxy: cnrancher/cn-rke-tools:v0.1.88-ent
+      certDownloader: cnrancher/cn-rke-tools:v0.1.88-ent
+      kubernetesServicesSidecar: cnrancher/cn-rke-tools:v0.1.88-ent
   - version: v1.24.15-rancherent1-1-1
     referenceVersion: v1.24.15-rancher1-1
     systemImages:
