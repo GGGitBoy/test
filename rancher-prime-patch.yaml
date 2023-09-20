@@ -1,4 +1,31 @@
 releases:
+  - version: v1.26.8-rancherent1-1-1
+    referenceVersion: v1.26.8-rancher1-1
+    systemImages:
+      alpine: cnrancher/cn-rke-tools:v0.1.90-ent
+      nginxProxy: cnrancher/cn-rke-tools:v0.1.90-ent
+      certDownloader: cnrancher/cn-rke-tools:v0.1.90-ent
+      kubernetesServicesSidecar: cnrancher/cn-rke-tools:v0.1.90-ent
+      aciGbpServerContainer: "noiro/gbp-server:5.2.7.1.81c2369" # this is a patch only for gc-kdm validation
+      aciOpflexServerContainer: "noiro/opflex-server:5.2.3.2.1d150da" # this is a patch only for gc-kdm validation
+  - version: v1.25.13-rancherent1-1-1
+    referenceVersion: v1.25.13-rancher1-1
+    systemImages:
+      alpine: cnrancher/cn-rke-tools:v0.1.90-ent
+      nginxProxy: cnrancher/cn-rke-tools:v0.1.90-ent
+      certDownloader: cnrancher/cn-rke-tools:v0.1.90-ent
+      kubernetesServicesSidecar: cnrancher/cn-rke-tools:v0.1.90-ent
+      aciGbpServerContainer: "noiro/gbp-server:5.2.7.1.81c2369" # this is a patch only for gc-kdm validation
+      aciOpflexServerContainer: "noiro/opflex-server:5.2.3.2.1d150da" # this is a patch only for gc-kdm validation
+  - version: v1.24.17-rancherent1-1-1
+    referenceVersion: v1.24.17-rancher1-1
+    systemImages:
+      alpine: cnrancher/cn-rke-tools:v0.1.90-ent
+      nginxProxy: cnrancher/cn-rke-tools:v0.1.90-ent
+      certDownloader: cnrancher/cn-rke-tools:v0.1.90-ent
+      kubernetesServicesSidecar: cnrancher/cn-rke-tools:v0.1.90-ent
+      aciGbpServerContainer: "noiro/gbp-server:5.2.7.1.81c2369" # this is a patch only for gc-kdm validation
+      aciOpflexServerContainer: "noiro/opflex-server:5.2.3.2.1d150da" # this is a patch only for gc-kdm validation
   - version: v1.26.7-rancherent1-1-1
     referenceVersion: v1.26.7-rancher1-1
     systemImages:
