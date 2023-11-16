@@ -8,6 +8,11 @@ releases:
       kubernetesServicesSidecar: cnrancher/cn-rke-tools:v0.1.90-ent
       aciGbpServerContainer: "noiro/gbp-server:5.2.7.1.81c2369" # this is a patch only for gc-kdm validation
       aciOpflexServerContainer: "noiro/opflex-server:5.2.3.2.1d150da" # this is a patch only for gc-kdm validation
+  - version: v1.25.14-rancherent1-1-1
+    referenceVersion: v1.25.14-rancher1-1
+    systemImages:
+      aciGbpServerContainer: "noiro/gbp-server:5.2.7.1.81c2369" # this is a patch only for gc-kdm validation
+      aciOpflexServerContainer: "noiro/opflex-server:5.2.3.2.1d150da" # this is a patch only for gc-kdm validation
   - version: v1.25.13-rancherent1-1-1
     referenceVersion: v1.25.13-rancher1-1
     systemImages:
