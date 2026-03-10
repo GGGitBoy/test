@@ -1,0 +1,18 @@
+apiVersion: v0
+kind: ImagesLock
+metadata:
+  generatedAt: "2026-01-21T18:18:14.141066431Z"
+  generatedBy: SUSE LLC
+chart:
+  name: cni
+  version: 1.28.3
+  appVersion: 1.28.3
+images:
+  - name: install-cni
+    image: dp.apps.rancher.io/containers/install-cni:1.28.3-1.11
+    chart: cni
+    digests:
+      - digest: sha256:3bc256809c8b2363d5355f86a72c3ae3216754344b33242388d2f5f19c348c4b
+        arch: linux/amd64
+      - digest: sha256:08e95876b2f09ecbab7599398686bbe3ba5b370e8e27296a33e2277b300eb42a
+        arch: linux/arm64

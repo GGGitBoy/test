@@ -1,0 +1,34 @@
+apiVersion: v0
+kind: ImagesLock
+metadata:
+  generatedAt: "2026-01-21T18:18:12.55365705Z"
+  generatedBy: SUSE LLC
+chart:
+  name: istiod
+  version: 1.28.3
+  appVersion: 1.28.3
+images:
+  - name: bci-busybox
+    image: dp.apps.rancher.io/containers/bci-busybox:15.7-18.1
+    chart: istiod
+    digests:
+      - digest: sha256:7c7d8d3ff8813e62ec46501b458c47cabf818867afd8ade209f729e181a3f7ea
+        arch: linux/amd64
+      - digest: sha256:88284ea99af2d4828d9b8082fd8ec72800dd2902993e695e683bbf98fe5fd1c4
+        arch: linux/arm64
+  - name: pilot
+    image: dp.apps.rancher.io/containers/pilot:1.28.3-1.10
+    chart: istiod
+    digests:
+      - digest: sha256:552bd7b01b4d7b681d5b2c2db741ff3cb4daa036c318ad260aa0c3d929b2fd97
+        arch: linux/amd64
+      - digest: sha256:57510a2c124f659ff935ede2831a6180496bbc1f122102080f4a0a52c0ba5331
+        arch: linux/arm64
+  - name: proxyv2
+    image: dp.apps.rancher.io/containers/proxyv2:1.28.3-1.26
+    chart: istiod
+    digests:
+      - digest: sha256:9707dae8ede61cf0235a3feaea46f65706703b17d7ae8f2b275c30c729731fb8
+        arch: linux/amd64
+      - digest: sha256:2b54c104eb89c020fc0a996e7e976ff886c539986b578c94bb37361fa918f9a2
+        arch: linux/arm64

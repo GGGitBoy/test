@@ -1,0 +1,18 @@
+apiVersion: v0
+kind: ImagesLock
+metadata:
+  generatedAt: "2026-01-21T18:18:13.642813067Z"
+  generatedBy: SUSE LLC
+chart:
+  name: gateway
+  version: 1.28.3
+  appVersion: 1.28.3
+images:
+  - name: proxyv2
+    image: dp.apps.rancher.io/containers/proxyv2:1.28.3-1.26
+    chart: gateway
+    digests:
+      - digest: sha256:9707dae8ede61cf0235a3feaea46f65706703b17d7ae8f2b275c30c729731fb8
+        arch: linux/amd64
+      - digest: sha256:2b54c104eb89c020fc0a996e7e976ff886c539986b578c94bb37361fa918f9a2
+        arch: linux/arm64

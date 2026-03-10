@@ -1,0 +1,50 @@
+global:
+  # -- Global override for container image registry
+  imageRegistry: ""
+  # -- Global override for container image registry pull secrets
+  imagePullSecrets: []
+  # -- Platform where Istio is deployed. Possible values are: "openshift", "gcp".
+  # An empty value means it is a vanilla Kubernetes distribution, therefore no special treatment will be considered.
+  platform: ""
+  # -- Global override values for all Istio sub-charts (refer to each sub-chart to obtain the list of all supported values)
+  "*":
+base:
+  # -- Whether to enable deploy the base sub-chart
+  enabled: true
+  # -- [Configuration profile](https://istio.io/latest/docs/setup/additional-setup/config-profiles/) to be enabled for the base sub-chart
+  profile: ""
+  # -- base sub-chart configurations (refer to the sub-chart to obtain the list of supported values)
+  "*":
+  # Note: This field is only added for documentation purposes
+cni:
+  # -- Whether to enable deploy the cni sub-chart
+  enabled: false
+  # -- [Configuration profile](https://istio.io/latest/docs/setup/additional-setup/config-profiles/) to be enabled for the base sub-chart
+  profile: ""
+  # -- cni sub-chart configurations (refer to the sub-chart to obtain the list of supported values)
+  "*":
+  # Note: This field is only added for documentation purposes
+gateway:
+  # Whether to enable deploy the gateway sub-chart
+  enabled: false
+  # -- [Configuration profile](https://istio.io/latest/docs/setup/additional-setup/config-profiles/) to be enabled for the base sub-chart
+  profile: ""
+  # -- gateway sub-chart configurations (refer to the sub-chart to obtain the list of supported values)
+  "*":
+  # Note: This field is only added for documentation purposes
+istiod:
+  # -- Whether to deploy the istiod sub-chart
+  enabled: true
+  # -- [Configuration profile](https://istio.io/latest/docs/setup/additional-setup/config-profiles/) to be enabled for the base sub-chart
+  profile: ""
+  # -- istiod sub-chart configurations (refer to the sub-chart to obtain the list of supported values)
+  "*":
+  # Note: This field is only added for documentation purposes
+ztunnel:
+  # -- Whether to deploy the ztunnel sub-chart
+  enabled: false
+  # -- [Configuration profile](https://istio.io/latest/docs/setup/additional-setup/config-profiles/) to be enabled for the base sub-chart
+  profile: ""
+  # -- ztunnel sub-chart configurations (refer to the sub-chart to obtain the list of supported values)
+  "*":
+  # Note: This field is only added for documentation purposes
